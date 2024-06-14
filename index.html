@@ -20,6 +20,7 @@
       .attribution {
         font-size: 11px;
         text-align: center;
+        margin-top: 10vh;
       }
       .attribution a {
         color: hsl(228, 45%, 44%);
@@ -46,7 +47,7 @@
       .bio-card {
         background-color: var(--color-Dark-Grey);
         width: 380px;
-        height: 600px;
+        height: 610px;
         border-radius: 20px;
       }
       .profile-card {
@@ -65,23 +66,62 @@
         color: inherit;
         text-decoration: none;
       }
+      .profile-image-card img {
+        width: 96px;
+        height: 96px;
+        border-radius: 46px;
+        margin-top: 30px;
+      }
+      .profile-data-card {
+        margin-top: 24px;
+      }
+      .profile-data-card h1 {
+        font-weight: 700;
+        font-size: 24px;
+      }
+      .local-profile-card {
+        color: var(--color-Green);
+        font-weight: 700;
+        font-size: 14px;
+      }
+      .skills-profile-card {
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 14px;
+      }
+      .link-profile-card {
+        margin-top:30px ;
+        margin-left: 40px;
+        width: 300px;
+        height: 50px;
+      }
+      .link-profile-card a{
+        margin-bottom: 15px;
+        height: 40px;
+        border-radius: 10px;
+        font-weight: 600;
+      }
+      .link-profile-card a:hover{
+        background-color: var(--color-Green);
+        color: var(--color-Off-Black);
+      }
     </style>
   </head>
   <body>
     <main class="bio-card">
       <article class="profile-card">
-        <figure>
+        <figure class="profile-image-card">
           <img src="assets/images/avatar-jessica.jpeg" alt="" />
         </figure>
-        <section>
+        <section class="profile-data-card">
           <h1>Jessica Randall</h1>
-          <p>London, United Kingdom</p>
-          <p>"Front-end developer and avid reader"</p>
+          <p class="local-profile-card">London, United Kingdom</p>
+          <p class="skills-profile-card">"Front-end developer and avid reader."</p>
         </section>
-        <nav>
+        <nav class="link-profile-card">
           <a href="#">GitHub</a>
           <a href="#">Frontend Mentor</a>
-          <a href="#">ankedIn</a>
+          <a href="#">Linkedln</a>
           <a href="#">Twitter</a>
           <a href="#">Instagram</a>
         </nav>
@@ -92,7 +132,7 @@
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
+        >. Coded by <a href="#">Pedro Vitor</a>.
       </div>
     </footer>
   </body>
